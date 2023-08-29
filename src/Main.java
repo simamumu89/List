@@ -3,16 +3,17 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
-        List<String> names = new ArrayList<>();
-        names.add("田中");
-        names.add("鈴木");
-        names.add("佐藤");
+    public static void main(String[] args)throws Exception {
 
-        System.out.println(names.size());
-        System.out.println(names.get(0));
-        System.out.println(names.get(1));
-        System.out.println(names.get(2));
+        List<String> list = new ArrayList<String>();
 
+        list.add("田中");
+        list.add("鈴木");
+        list.add("佐藤");
+
+        System.out.println("for文");
+        for (int i = 0; i <list.size(); i++){
+            System.out.printf(list.get(i));
+        }
     }
 }
